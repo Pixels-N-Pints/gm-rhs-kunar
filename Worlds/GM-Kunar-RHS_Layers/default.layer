@@ -1,0 +1,100 @@
+SCR_MapEntity MapEntity : "{731564B66F91B107}Prefabs/World/Game/MapEntity.et" {
+ coords 2448.693 125.577 1881.876
+ "Map Geometry Data" "{19C0B5F77603F580}worlds/KunarRagion/KunarRagion.topo"
+ "Satellite background image" "{A1D00B972DF2707A}worlds/KunarRagion/KunarRagion.edds"
+ {
+  CommentEntity {
+   coords 0 1 0
+   m_Comment "MapEntity: "\
+   "Set up map textures"
+   m_Color 0 0 0
+   m_FaceCamera 1
+   m_TextBackground 1
+   m_BackgroundColor 1 0.6 0
+   m_BackgroundTransparency 0
+  }
+ }
+}
+SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5C8C9B750D124A63}" {
+   NavmeshSettings NavmeshWorld "{5C8C9B750B60C6E2}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5C90BD0EC793647D}" {
+     NavmeshFile "{6B86C8A4A0525B02}worlds/GameMaster/GM_KunarRagion_Navmesh.nmn"
+    }
+   }
+  }
+ }
+ coords 2448.693 125.342 1880.876
+ {
+  CommentEntity {
+   coords 0 1 0
+   m_Comment "SCR_AIWorld: "\
+   "Configure navigation mesh"
+   m_Color 0 0 0
+   m_FaceCamera 1
+   m_TextBackground 1
+   m_BackgroundColor 1 0.6 0
+   m_BackgroundTransparency 0
+  }
+ }
+}
+PerceptionManager PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 2448.693 125.106 1879.876
+}
+SCR_GameModeEditor GameMode_Editor_Full : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_Full.et" {
+ coords 2448.693 124.856 1878.876
+ {
+  SCR_FactionManager {
+   ID "56E685E92F1B7E7A"
+   Factions {
+    SCR_Faction "{5978B9CE6585BBE8}" {
+    }
+    SCR_Faction "{5CC8DE37E1FF0F7A}" {
+     m_bIsPlayable 1
+    }
+   }
+  }
+  SCR_LoadoutManager {
+   ID "56E685E92F1B7E2A"
+   m_aPlayerLoadouts {
+    SCR_FactionPlayerLoadout "{6162FCD4F0F0BBDA}" {
+     m_sLoadoutName "Grenadier"
+     m_sLoadoutResource "{2E1900C48703EB30}Prefabs/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_GL.et"
+     m_sLoadoutImage "{278F133159A4C443}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_GL.edds"
+     m_sAffiliatedFaction "RHS_US_USMC"
+    }
+    SCR_FactionPlayerLoadout "{6162FCD53B99FFFA}" {
+     m_sLoadoutName "Automatic Rifleman"
+     m_sLoadoutResource "{835C2697D6A59AB6}Prefabs/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_AR.et"
+     m_sLoadoutImage "{FDB568E7E526220D}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_AR.edds"
+     m_sAffiliatedFaction "RHS_US_USMC"
+    }
+    SCR_FactionPlayerLoadout "{6162FCD56E4FF7B6}" {
+     m_sLoadoutName "Rifleman AT"
+     m_sLoadoutResource "{5BF44F56AF2C84EA}Prefabs/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_AT.et"
+     m_sLoadoutImage "{40653A609A3D3E13}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_AT.edds"
+     m_sAffiliatedFaction "RHS_US_USMC"
+    }
+    SCR_FactionPlayerLoadout "{6162FCD589077ACC}" {
+     m_sLoadoutName "Marksman"
+     m_sLoadoutResource "{4E428F777D13EC14}Prefabs/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_Marksman.et"
+     m_sLoadoutImage "{45EF83004C41DA5B}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_Marksman.edds"
+     m_sAffiliatedFaction "RHS_US_USMC"
+    }
+    SCR_FactionPlayerLoadout "{6162FCD59E45F719}" {
+     m_sLoadoutName "Radio-Telegraph Operator"
+     m_sLoadoutResource "{00EA65CF0B11AA5F}Prefabs/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_RTO.et"
+     m_sLoadoutImage "{54A2F9F378A161CA}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_RTO.edds"
+     m_sAffiliatedFaction "RHS_US_USMC"
+    }
+    SCR_FactionPlayerLoadout "{6162FCD5F1761DD6}" {
+     m_sLoadoutName "Hospital Corpsman"
+     m_sLoadoutResource "{C4D4A261528A7983}Prefabs/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_Corpsman.et"
+     m_sLoadoutImage "{EB73FEC71524972F}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_Corpsman.edds"
+     m_sAffiliatedFaction "RHS_US_USMC"
+    }
+   }
+  }
+ }
+}
